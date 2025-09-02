@@ -1,1 +1,60 @@
-<div class="bg-img"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarLink Homepage</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        /* Full-screen hero image */
+        .hero {
+            width: 100%;
+            max-width: 2560px; /* ensures image is not stretched beyond high-res */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Optional: center content over image */
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .overlay-text {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero image -->
+    <img 
+        src="https://raw.githubusercontent.com/asimboss00789-blip/StarLink/main/IMG_9035.jpeg" 
+        alt="Homepage Image" 
+        class="hero"
+    >
+
+    <!-- Optional overlay text -->
+    <div class="overlay-text">
+        Welcome to StarLink
+    </div>
+</body>
+</html>
